@@ -1,105 +1,62 @@
-/* Alap margók és paddingok törlése */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* CSS módosítások */
 
-/* Általános szöveg formázás */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9; /* Világos háttér */
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Fejléc formázás */
-header {
-    background-color: #006699;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-}
-
-/* Navigációs sáv */
-.navbar {
-    background-color: #333;
-}
-
-.navbar a {
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* Szekciók */
-section {
-    padding: 40px 20px;
-    margin-bottom: 20px;
-}
-
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-section p {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-}
-
-/* Ajánlások szekció formázása */
-#ajanlasok {
-    background-color: #e9ecef;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-#ajanlasok ul {
-    list-style: none;
-    padding-left: 20px;
-}
-
-#ajanlasok li {
-    margin-bottom: 10px;
-}
-
-/* Footer formázás */
-footer {
-    background-color: #006699;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-#stressz {
-    padding: 30px 0;  /* Függőleges padding a sectionhez */
-    background-color: #f4f4f4;  /* Világos háttér szín */
+#stressz img {
+    width: 100%;  /* A kép szélessége kitölti a szülőkonténert */
+    max-width: 800px; /* A kép maximális szélessége 800px-ra korlátozva */
+    height: auto; /* A magasság arányosan változik */
     margin-top: 20px;
-    text-align: center;  /* A szöveg középre igazítása */
-    width: 100%;  /* 100%-os szélesség */
-}
-
-#stressz h2 {
-    font-size: 2rem;
     margin-bottom: 20px;
-    padding-left: 20px; /* Pár pixelnyi hely a bal oldalon */
+    display: block; /* Kép közvetlenül blokk szintű elem */
+    margin-left: auto; /* Kép középre igazítása */
+    margin-right: auto; /* Kép középre igazítása */
 }
 
+/* Aktivált navigációs link kiemelése */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #006699;
+}
 
+/* Témafejlesztés szakasz szövegeinek kiemelése */
+#temafejlesztes p strong {
+    color: #006699;
+}
 
+/* Kép reszponzív */
+.img-fluid {
+    max-width: 100%;
+    max-height: 100%;
+}
 
+/* Szekciók közötti tér */
+section {
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Gombok stílusai */
+.btn-primary {
+    background-color: #006699;
+    border-color: #006699;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #004d66;
+    border-color: #004d66;
+}
 

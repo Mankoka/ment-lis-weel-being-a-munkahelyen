@@ -11,18 +11,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Saját CSS fájl -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigációs sáv -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Jóllét Munkahelyen</a>
+            <a class="navbar-brand" href="#">Jóllét a Munkahelyen</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto"> <!-- Jobbra igazítottuk a navigációt -->
                     <li class="nav-item"><a class="nav-link active" href="#temafejlesztes">Témafejlesztés</a></li>
                     <li class="nav-item"><a class="nav-link" href="#ajanlasok">Ajánlások</a></li>
                     <li class="nav-item"><a class="nav-link" href="#kapcsolat">Kapcsolat</a></li>
@@ -30,11 +30,14 @@
             </div>
         </div>
     </nav>
+
+    <!-- Stressz és Kiégés szakasz -->
     <section id="stressz">
-        
         <div class="container"> <!-- A container itt van, hogy szűkítse a tartalom szélességét -->
             <div class="row">
-                <div class="col-12"><h2>A csendes gyilkos: stressz és kiégés</h2></div>
+                <div class="col-12">
+                    <h2>A csendes gyilkos: stressz és kiégés</h2>
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
@@ -43,16 +46,44 @@
                         amelyeknek nincsenek látható, közvetlen, azonnal megtapasztalható jelei.
                     </p>
                     <p>
-                        A stressz jelei nem mindig nyilvánvalóak, és éppen ezért sokszor figyelmen kívül hagyjuk őket.
+                        Először érdemes tisztázni, hogy mi a stressz és a kiégés
+                    </p>
+                    <p>
+                        <strong>Stressz:</strong> Az az érzés, amikor azt érzékeljük, hogy a ránk nehezedő követelmények meghaladják a rendelkezésre álló erőforrásainkat. A "nem tudok ezzel megküzdeni" gondolatok jellemzik.
+                    </p>
+                    <p>
+                        <strong>Kiégés:</strong> Érzelmi, mentális és fizikai kimerültség állapota, amelyet az erőteljes és/vagy állandósult stressz okoz. A "nem érdekel" gondolatok jellemzik.
+                    </p>
+                    <p>
+                        <strong>Mi a különbség a stressz és a kiégés között?</strong>
+                    </p>
+                    <p>
+                        A stresszhelyzetnek a "nekem ez már túl sok" a jellemzője: nagy pszichológiai nyomás és követelmények, erőteljes fizikai érzetek. A Kiégésre a "nekem nincs már semmi" jellemzője: nincs motiváció, nincs remény a pozitív változásra.
+                    </p>
+                    <p>
+                        <strong>Mi az oka a kiégésnek?</strong>
+                    </p>
+                    <p>
+                        <strong>Személyiséggel kapcsolatos okok:</strong><br>
+                        - perfekcionista tendenciák,<br>
+                        - pesszimista világ- és önértékelés,<br>
+                        - a kontroll fenntartásának kényszere,<br>
+                        - a delegálás elutasítása,<br>
+                        - túlzottan magas eredményszemlélet,<br>
+                        - A típusú személyiség.
+                    </p>
+                    <p>
+                        <strong>Mi vezet a kiégéshez?</strong><br>
+                        A stresszhelyzetből elinduló gondolatok negatív érzelmeket generálnak. Ezek hatására újabb, negatív értelemben mélyebb, sötétebb gondolatok születhetnek. Az érzelmek követik a gondolatokat. A gondolataink viszont a mi valóságunkat jelentik, azt, ahogyan érzékeljük a világot. Ez egy ördögi kör, ami megnehezíti a megküzdést a negatív érzelmeinkkel. Ez a lefelé mutató spirális és elhúzódó folyamat vezet a kiégéshez.
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <img src="stressz és kiégés1.jpg" alt="Stresszes ember a munkahelyen" class="img-fluid">
+                    <!-- Kép ide jön -->
+                    <img src="munkahelyi-stressz.jpg" alt="munkahelyi stressz" class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
-    
 
     <div class="container">
         <header>
@@ -67,34 +98,44 @@
             <p>A munkahely a megkérdezettek majdnem 90%-a szerint fontos szerepet tölt be abban, hogy hogyan érzik magukat az emberek a bőrükben. A jó munkahely protektív faktort jelenthet, míg egy stresszes környezet jelentősen ronthatja az emberek mentális egészségügyi állapotát. Ennek okán talán érthető, miért gondolja úgy a többség, hogy a munkáltatónak felelőssége törődni a dolgozók jóllétével.</p>
             <p>„Ha egy munkavállaló jól van, sokkal hatékonyabban, motiváltabban tud dolgozni, ezenkívül magasabb az elkötelezettsége is. Munkáltatóként így érdemes egy olyan munkakörnyezet kialakítására törekedni, ahol a munkatársak megélik a biztonságot, a bizalmat és a törődést” – mondja el Novák Dóra, az Impact Works mentális jóllét programjainak szakértője.</p>
         </section>
-        
 
         <!-- Ajánlások szakasz -->
         <section id="ajanlasok">
-                <h2>Ajánlások</h2>
-                <p>A munkahelyi mentális jóllét javítására számos programot bevezethetnek a munkáltatók. Az alábbiakban néhány javasolt intézkedést ismertetünk:</p>
-                <ul>
-                    <li>Konfliktuskezelési tréningek</li>
-                    <li>Stresszkezelési programok</li>
-                    <li>Egészségbiztosítás, pszichológiai tanácsadás</li>
-                    <li>Sportolási lehetőségek biztosítása</li>
-                    <li>Munka-magánélet egyensúlya (rugalmas munkaidő, home office)</li>
-                    <li>Pihenőhelyek kialakítása</li>
-                    <li>Önkéntes programok és közösségépítő események</li>
-                </ul>
+            <h2>Ajánlások</h2>
+            <p>A munkahelyi mentális jóllét javítására számos programot bevezethetnek a munkáltatók. Az alábbiakban néhány javasolt intézkedést ismertetünk:</p>
+            <ul>
+                <li>Konfliktuskezelési tréningek</li>
+                <li>Stresszkezelési programok</li>
+                <li>Egészségbiztosítás, pszichológiai tanácsadás</li>
+                <li>Sportolási lehetőségek biztosítása</li>
+                <li>Munka-magánélet egyensúlya (rugalmas munkaidő, home office)</li>
+                <li>Pihenőhelyek kialakítása</li>
+                <li>Önkéntes programok és közösségépítő események</li>
+            </ul>
+        </section>
 
         <!-- Kapcsolat szakasz -->
         <section id="kapcsolat">
             <h2>Kapcsolat</h2>
-            <p>Ha többet szeretnél tudni a mentális jólét témájáról és a különböző munkahelyi programok működéséről, lépj velünk kapcsolatba!</p>
-            <p>Elérhetőségeink:</p>
-            <ul>
-                <li>Email: info@mentalisjolleth.hu</li>
-                <li>Telefon: +36 1 234 5678</li>
-                <li>Weboldal: <a href="https://www.mentalisjolleth.hu">www.mentalisjolleth.hu</a></li>
-            </ul>
+            <p>Ha többet szeretnél tudni a mentális jóllétről munkahelyi környezetben, vagy szeretnél részt venni programjainkon, vedd fel velünk a kapcsolatot!</p>
+            <form>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email cím</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Üzenet</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Küldés</button>
+            </form>
         </section>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Mentális jóllét a munkahelyeken</p>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
